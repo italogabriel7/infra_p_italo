@@ -1,0 +1,55 @@
+{
+  "info": {
+    "name": "Infra Prova API - Collection",
+    "_postman_id": "e7bb9b89-8b64-4a71-9c99-6db4fa3cfa00",
+    "description": "Requests para testar a API Flask da atividade.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /sum",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"a\": 3, \"b\": 4.5}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/sum",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "sum"
+          ]
+        }
+      }
+    }
+  ]
+}
